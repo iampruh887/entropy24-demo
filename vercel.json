@@ -1,17 +1,9 @@
 {
     "rewrites": [
-      { "source": "/", "destination": "/index" },
-      { "source": "/teams", "destination": "/teams/index" },
-      { "source": "/teams/webAndCreatives", "destination": "/teams/webAndCreatives" },
-      { "source": "/teams/eventManagement", "destination": "/teams/eventManagement" },
-      { "source": "/teams/design", "destination": "/teams/design" },
-      { "source": "/teams/sponsorship", "destination": "/teams/sponsorship" },
-      { "source": "/teams/faculty", "destination": "/teams/faculty" },
-      { "source": "/gallery", "destination": "/gallery" },
-      { "source": "/events", "destination": "/events/index" },
-      { "source": "/events/day1", "destination": "/events/day1" },
-      { "source": "/events/day2", "destination": "/events/day2" },
-      { "source": "/sponsors", "destination": "/sponsors" }
+      {
+        "source": "/(.*)",
+        "destination": "/index.html"
+      }
     ]
   }
   
