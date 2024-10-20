@@ -1,51 +1,51 @@
 {
     "routes": [
             {
-              "path": "/",
+              "src": "/",
               "dest": "<App />,"
             },
             {
-              "path": "/teams",
+              "src": "/teams",
               "dest": "<Suspense fallback={<div><Loader/></div>}><Team /></Suspense>,"
             },
             {
-              "path": "/teams/webAndCreatives",
+              "src": "/teams/webAndCreatives",
               "dest": "<Suspense fallback={<div><Loader/></div>}><WebAndCreatives /></Suspense>,"
             },
             {
-              "path": "/teams/eventManagement",
+              "src": "/teams/eventManagement",
               "dest": "<Suspense fallback={<div><Loader/></div>}><EventManagement /></Suspense>,"
             },
             {
-              "path": "/teams/design",
+              "src": "/teams/design",
               "dest": "<Suspense fallback={<div><Loader/></div>}><DesignTeam /></Suspense>,"
             },
             {
-              "path": "/teams/sponsorship",
+              "src": "/teams/sponsorship",
               "dest": "<Suspense fallback={<div><Loader/></div>}><Sponsorship /></Suspense>,"
             },
             {
-              "path": "/teams/faculty",
+              "src": "/teams/faculty",
               "dest": "<Suspense fallback={<div><Loader/></div>}><FacultyCoordinators /></Suspense>,"
             },
             {
-              "path": "/gallery",
+              "src": "/gallery",
               "dest": "<Suspense fallback={<div><Loader/></div>}><Gallery /></Suspense>,"
             },
             {
-              "path": "/events",
+              "src": "/events",
               "dest": "<Suspense fallback={<div><Loader/></div>}><Events /></Suspense>,"
             },
             {
-              "path": "/sponsors",
+              "src": "/sponsors",
               "dest": "<Suspense fallback={<div><Loader/></div>}><Sponsors /></Suspense>,"
             },
             {
-              "path": "/events/day1",
+              "src": "/events/day1",
               "dest": "<Suspense fallback={<div><Loader/></div>}><EventsDay1 /></Suspense>,"
             },
             {
-              "path": "/events/day2",
+              "src": "/events/day2",
               "dest": "<Suspense fallback={<div><Loader/></div>}><EventsDay2 /></Suspense>,"
             }
     ]
