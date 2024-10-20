@@ -1,0 +1,52 @@
+{
+    "routes": [
+            {
+              "path": '/',
+              "dest": <App />,
+            },
+            {
+              "path": '/teams',
+              "dest": <Suspense fallback={<div><Loader/></div>}><Team /></Suspense>,
+            },
+            {
+              "path": '/teams/webAndCreatives',
+              "dest": <Suspense fallback={<div><Loader/></div>}><WebAndCreatives /></Suspense>,
+            },
+            {
+              "path": '/teams/eventManagement',
+              "dest": <Suspense fallback={<div><Loader/></div>}><EventManagement /></Suspense>,
+            },
+            {
+              "path": '/teams/design',
+              "dest": <Suspense fallback={<div><Loader/></div>}><DesignTeam /></Suspense>,
+            },
+            {
+              "path": '/teams/sponsorship',
+              "dest": <Suspense fallback={<div><Loader/></div>}><Sponsorship /></Suspense>,
+            },
+            {
+              "path": '/teams/faculty',
+              "dest": <Suspense fallback={<div><Loader/></div>}><FacultyCoordinators /></Suspense>,
+            },
+            {
+              "path": '/gallery',
+              "dest": <Suspense fallback={<div><Loader/></div>}><Gallery /></Suspense>,
+            },
+            {
+              "path": '/events',
+              "dest": <Suspense fallback={<div><Loader/></div>}><Events /></Suspense>,
+            },
+            {
+              "path": '/sponsors',
+              "dest": <Suspense fallback={<div><Loader/></div>}><Sponsors /></Suspense>,
+            },
+            {
+              "path": '/events/day1',
+              "dest": <Suspense fallback={<div><Loader/></div>}><EventsDay1 /></Suspense>,
+            },
+            {
+              "path": '/events/day2',
+              "dest": <Suspense fallback={<div><Loader/></div>}><EventsDay2 /></Suspense>,
+            }
+    ]
+}
