@@ -1,52 +1,17 @@
 {
-    "routes": [
-            {
-              "src": "/",
-              "dest": "<App />,"
-            },
-            {
-              "src": "/teams",
-              "dest": "<Suspense fallback={<div><Loader/></div>}><Team /></Suspense>,"
-            },
-            {
-              "src": "/teams/webAndCreatives",
-              "dest": "<Suspense fallback={<div><Loader/></div>}><WebAndCreatives /></Suspense>,"
-            },
-            {
-              "src": "/teams/eventManagement",
-              "dest": "<Suspense fallback={<div><Loader/></div>}><EventManagement /></Suspense>,"
-            },
-            {
-              "src": "/teams/design",
-              "dest": "<Suspense fallback={<div><Loader/></div>}><DesignTeam /></Suspense>,"
-            },
-            {
-              "src": "/teams/sponsorship",
-              "dest": "<Suspense fallback={<div><Loader/></div>}><Sponsorship /></Suspense>,"
-            },
-            {
-              "src": "/teams/faculty",
-              "dest": "<Suspense fallback={<div><Loader/></div>}><FacultyCoordinators /></Suspense>,"
-            },
-            {
-              "src": "/gallery",
-              "dest": "<Suspense fallback={<div><Loader/></div>}><Gallery /></Suspense>,"
-            },
-            {
-              "src": "/events",
-              "dest": "<Suspense fallback={<div><Loader/></div>}><Events /></Suspense>,"
-            },
-            {
-              "src": "/sponsors",
-              "dest": "<Suspense fallback={<div><Loader/></div>}><Sponsors /></Suspense>,"
-            },
-            {
-              "src": "/events/day1",
-              "dest": "<Suspense fallback={<div><Loader/></div>}><EventsDay1 /></Suspense>,"
-            },
-            {
-              "src": "/events/day2",
-              "dest": "<Suspense fallback={<div><Loader/></div>}><EventsDay2 /></Suspense>,"
-            }
+    "rewrites": [
+      { "source": "/", "destination": "/index" },
+      { "source": "/teams", "destination": "/teams/index" },
+      { "source": "/teams/webAndCreatives", "destination": "/teams/webAndCreatives" },
+      { "source": "/teams/eventManagement", "destination": "/teams/eventManagement" },
+      { "source": "/teams/design", "destination": "/teams/design" },
+      { "source": "/teams/sponsorship", "destination": "/teams/sponsorship" },
+      { "source": "/teams/faculty", "destination": "/teams/faculty" },
+      { "source": "/gallery", "destination": "/gallery" },
+      { "source": "/events", "destination": "/events/index" },
+      { "source": "/events/day1", "destination": "/events/day1" },
+      { "source": "/events/day2", "destination": "/events/day2" },
+      { "source": "/sponsors", "destination": "/sponsors" }
     ]
-}
+  }
+  
