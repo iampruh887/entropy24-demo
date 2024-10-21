@@ -82,7 +82,7 @@ function App() {
         {/* <div className="header2">TEAM</div> */}
         </div>
       <div className="stars">
-        <div className="stars1"></div>
+        <div className="stars1"></div>  
         <div className="stars2"></div>
         <div className="stars3"></div>
       </div>

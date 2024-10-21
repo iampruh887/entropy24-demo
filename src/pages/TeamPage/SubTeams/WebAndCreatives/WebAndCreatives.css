@@ -232,14 +232,12 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* font-size: 15em; */
   font-weight: 900;
   color: var(--white);
   position: absolute;
-  top: 1.3vh; /* Adjust to your preference */
+  top: 1.3vh; 
   left: 50%;
   transform: translateX(-50%);
-  /* font-family: var(--body-font); */
   animation: moveToTop 1s forwards 2.1s;
 }
 
