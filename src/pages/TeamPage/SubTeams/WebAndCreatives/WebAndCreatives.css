@@ -228,7 +228,7 @@ img {
 
 /* HEADER */
 
-.header_wnc {
+/* .header_wnc {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -239,7 +239,7 @@ img {
   left: 50%;
   transform: translateX(-50%);
   animation: moveToTop 1s forwards 2.1s;
-}
+} */
 
 .header_wnc::after {
   content: '';
@@ -360,4 +360,11 @@ img {
   transform: translateX(50px);
 }
 
-
+@media (max-width: 1000px) {
+    .header_wnc{
+      transform: scale(2);
+    }
+    .card-list {
+      margin-top: 100px;
+    }
+}
