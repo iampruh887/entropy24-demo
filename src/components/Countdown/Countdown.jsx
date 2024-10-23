@@ -10,7 +10,7 @@ const Countdown = () => {
   });
 
   useEffect(() => {
-    const targetDate = new Date("October 27, 2024 00:00:00").getTime();
+    const targetDate = new Date("October 25, 2024 00:00:00").getTime();
 
     const calculateTimeLeft = () => {
       const now = new Date().getTime();
@@ -51,7 +51,7 @@ const Countdown = () => {
 
   return (
     <div className={classes['countdown-container'] + " " + classes.center}>
-        <h1 className={classes['h1-heading']}>Get Ready for <div className={classes['entropy-heading']}>ENTROPY</div></h1>
+        <h1 className={classes['h1-heading']}>Get Ready for <div className={classes['entropy-heading']}>ENTROPY 2K24</div></h1>
         <section className={classes['countdown-timer']}>
             <CountdownInfo value={timeLeft.days} label="DAYS" />
             <CountdownInfo value={timeLeft.hours} label="HOURS" />
