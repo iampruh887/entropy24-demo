@@ -1,99 +1,424 @@
-// import React, { useEffect } from 'react';
-// import './WebAndCreatives.css';
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
 
-// const Card = () => {
-//     useEffect(() => {
-//         const toggleCard = 'card-toggle';
-//         const socialCard = 'card-social';
-
-//         const toggle = document.getElementById(toggleCard);
-//         const social = document.getElementById(socialCard);
-
-//         const handleToggleClick = () => {
-//             if (social.classList.contains('animation')) {
-//                 social.classList.add('down-animation');
-//                 setTimeout(() => {
-//                     social.classList.remove('down-animation');
-//                 }, 1000);
-//             }
-//             social.classList.toggle('animation');
-//         };
-
-//         toggle.addEventListener('click', handleToggleClick);
-
-//         return () => {
-//             toggle.removeEventListener('click', handleToggleClick);
-//         };
-//     }, []); // Empty dependency array ensures this effect runs once after initial render
-
-//     return (
-//         <div className="container">
-//             <div className="card">
-//                 <div className="card__border">
-//                     <img src="assets/img/profile-img.png" alt="card image" className="card__img" />
-//                 </div>
-
-//                 <h3 className="card__name">Emily Jules</h3>
-//                 <span className="card__profession">UI/UX Designer</span>
-
-//                 <div className="card__social" id="card-social">
-//                     <div className="card__social-control">
-//                         {/* Toggle button */}
-//                         <div className="card__social-toggle" id="card-toggle">
-//                             <i className="ri-add-line"></i>
-//                         </div>
-
-//                         <span className="card__social-text">My social networks</span>
-
-//                         {/* Card social */}
-//                         <ul className="card__social-list">
-//                             <li>
-//                                 <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" className="card__social-link">
-//                                     <i className="ri-facebook-line"></i>
-//                                 </a>
-//                             </li>
-//                             <li>
-//                                 <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" className="card__social-link">
-//                                     <i className="ri-instagram-line"></i>
-//                                 </a>
-//                             </li>
-//                             <li>
-//                                 <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" className="card__social-link">
-//                                     <i className="ri-twitter-line"></i>
-//                                 </a>
-//                             </li>
-//                         </ul>
-//                     </div>
-//                 </div>
-//             </div>
-//         </div>
-//     );
-// };
-
-// export default Card;
-import "./WebAndCreatives.css"; // Ensure this path matches your stylesheet
-import CardList from "./CardList"; // Ensure this path matches where your CardList component is located
-import ScrambleText from "../../../../components/scramble/Scramble";
-import Navbar from "../../../Navbar/Navbar";
-
-function App() {
-  return (
-    <div className="App">
-      <Navbar/>
-
-        <div className="header_wnc">
-        <div className="header1_wnc"><ScrambleText className="header1_wnc">Web & Creatives</ScrambleText></div>
-        </div>
-      <div className="stars">
-        <div className="stars1"></div>  
-        <div className="stars2"></div>
-        <div className="stars3"></div>
-      </div>
-      <div className="bodyCard">
-        <CardList />
-      </div>
-    </div>
-  );
+/*=============== VARIABLES CSS ===============*/
+:root {
+  /*========== Colors ==========*/
+  --first-color: #1C1D23;
+  --first-color-light: #820bbe;
+  --black-color: hsl(29, 16%, 10%);
+  --text-color: hsl(29, 8%, 65%);
+  --body-color: #030303;
+  
+  /*========== Font and typography ==========*/
+  --body-font: "Poppins", sans-serif;
+  --h3-font-size: 1.125rem;
+  --smaller-font-size: 0.75rem;
 }
 
-export default App;
+/*=============== BASE ===============*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: var(--body-font);
+  background-color: var(--body-color);
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*=============== CARD ===============*/
+.container {
+  height: 100%;
+  margin-inline: 1.5rem;
+  display: grid;
+  place-items: center;
+}
+
+
+.card {
+  position: relative;
+  width: 300px;
+  background-color: var(--black-color);
+  padding: 1.25rem 2rem 3rem;
+  border-radius: 1.5rem;
+  text-align: center;
+  box-shadow: 0 4px 16px hsla(255, 62%, 54%, 0.2);
+  /* padding: 2rem; */
+  animation: fadeIn 1s forwards 3s;
+  background-image: linear-gradient(#6e01a4,#930dc8);
+}
+
+.card__img {
+  width: 96px;
+  border-radius: 50%;
+}
+
+.card__border {
+  width: 110px;
+  height: 110px;
+  border: 2px solid var(--first-color);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  margin: 0 auto 0.75rem;
+}
+
+.card__name {
+  color: var(--first-color);
+  font-size: var(--h3-font-size);
+  font-weight: 500;
+}
+
+.card__profession {
+  color: #030303;
+  font-size: var(--smaller-font-size);
+  font-weight: 500;
+}
+
+.card__social {
+  width: 200px;
+  background-color: var(--first-color);
+  padding: 0.75rem;
+  border-radius: 3rem;
+  text-align: initial;
+  box-shadow: 0 8px 24px #8216d074;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1.75rem;
+  margin: 0 auto;
+  overflow: hidden;
+  transform-origin: 18px 17px;
+  /* background-color: red; */
+}
+
+.card__social-control {
+  position: relative;
+  transform-origin: 18px 18px;
+  transition: transform 0.45s ease-in-out;
+  transform: rotate(0);
+  padding-bottom:0rem;
+}
+
+.card__social-toggle {
+  display: inline-flex;
+  background-color: var(--first-color-light);
+  color: var(--first-color);
+  font-size: 1.25rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  align-items: center;
+  justify-content: center;
+  border-radius:50%;
+  cursor: pointer;
+  position: relative;
+  z-index: 10;
+}
+
+.card__social-text {
+  display: block;
+  color: var(--text-color);
+  font-size: 15px;
+  font-weight: 700;
+  border-radius: 50%;
+
+}
+
+.card__social-list {
+  display: inline-flex;
+  column-gap: .75rem;
+  transform: rotate(135deg);
+  transform-origin: 18px 17px;
+  border-radius: 50%;
+  font-weight: 900;
+  padding: 0rem;
+  /* background-color: brown; */
+  justify-content: space-between;
+}
+
+.card__social-link {
+  display: inline-flex;
+  background-color: var(--first-color-light);
+  color: var(--black-color);
+  font-size: 1.25rem;
+  padding: 6px;
+  border-radius: 50%;
+  width: 2.0rem;
+  height: 2.0rem;
+  height: 2.0rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.card__social-text, .card__social-list {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding-left: 3.1rem;
+}
+
+/* Rotate social */
+.animation .card__social-control {
+  transform: rotate(-135deg);
+}
+
+/* Up animation */
+.card__social.animation {
+  animation: up-animation 1s ease-in-out forwards;
+}
+
+@keyframes up-animation {
+  0%,
+  100% {
+    transform: rotate(0);
+  }
+  50%,
+  60% {
+    transform: rotate(-3deg);
+  }
+  88% {
+    transform: rotate(1deg);
+  }
+}
+
+/* Down animation */
+.card__social.down-animation {
+  animation: down-animation 1s ease-in-out forwards;
+}
+
+@keyframes down-animation {
+  0%,
+  100% {
+    transform: rotate(0);
+  }
+  50%,
+  60% {
+    transform: rotate(6deg);
+  }
+  88% {
+    transform: rotate(-1deg);
+  }
+}
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px; /* Adjust as needed */
+  justify-content: center;
+  padding: 30px;
+  margin-top: 20px;
+}
+
+.App{
+  padding: rem;
+}
+
+/* HEADER */
+
+/* .header_wnc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  color: var(--white);
+  position: absolute;
+  top: 1.3vh; 
+  left: 50%;
+  transform: translateX(-50%);
+  animation: moveToTop 1s forwards 2.1s;
+} */
+ 
+
+
+.header1_wnc {
+  opacity: 0;
+  transform: translateX(-50px);
+  /* animation: fadeInLeft 0.7s forwards 0.5s; */
+  color: transparent;
+  margin-right: 10px;
+  color:  #eeeeee;
+  font-size: 1.5em;
+  /* font-weight: 700; */
+
+}
+
+@keyframes fadeInLeft {
+  to {
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  to {
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  to {
+      opacity: 1;
+      visibility: visible;
+  }
+}
+
+@keyframes underline {
+  to {
+      width: 100%;
+      left: 0;
+  }
+}
+
+@keyframes moveToTop {
+  to {
+      top: 0;
+      transform: translate(-50%, 0);
+      font-size: 3.0rem;
+  }
+}
+
+@keyframes fadeInTop {
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+@keyframes fadeInBottom {
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.bodyCard{
+  visibility: hidden;
+  animation: display 2s forwards 2s;
+}
+
+@keyframes display {
+
+  0%{
+    opacity: 0;
+  }
+  50%{
+    opacity: 0.7;
+  }
+  70%{
+    opacity: 0.7;
+  }
+  99%{
+    opacity: 0.9;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+
+.header1_wnc, .header2 {
+  opacity: 0;
+  animation: fadeInLeft 0.7s forwards 0.5s;
+  margin: 0 10px;
+  /* color: var(--first-color); */
+  /* font-weight: 900; */
+  font-family: "Calistoga", serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.header1_wnc {
+  transform: translateX(-50px);
+}
+
+.header2 {
+  transform: translateX(50px);
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .gli-content{
+    font-size: 0.36rem; /* Increased by 40% for tablets */
+  }
+
+  .card {
+    width: 95%; /* Make cards wider on smaller screens */
+  }
+  
+  .card__img {
+    width: 70px; /* Smaller image */
+  }
+
+  .card__border {
+    width: 90px; /* Smaller border */
+    height: 90px; /* Smaller border */
+  }
+}
+
+/* Existing Media Queries */
+@media (max-width: 768px) {
+  .gli-content {
+    font-size: 0.36rem; /* Increased by 40% for tablets */
+  }
+
+  .card {
+    width: 100%; /* Keep cards full width for smaller screens */
+  }
+
+  .card__img {
+    width: 70px; /* Smaller image */
+  }
+
+  .card__border {
+    width: 90px; /* Smaller border */
+    height: 90px; /* Smaller border */
+  }
+}
+
+/* New Media Query for iPad Mini */
+@media (min-width: 481px) and (max-width: 768px) {
+  .card {
+    width: 45%; /* Two cards side by side */
+  }
+
+  .card-list {
+    flex-wrap: wrap; /* Ensure cards can wrap */
+    justify-content: space-between; /* Space out cards evenly */
+  }
+}
+
+
+@media (max-width: 480px) {
+  .gli-content {
+    font-size: 0.36rem; /* Increased by 40% for mobile (0.9rem * 1.4) */
+  }
+
+  .card {
+    padding: 1rem; /* Reduce padding */
+  }
+
+  /* Keeping other font sizes the same */
+  .card__name {
+    font-size: 1.25rem; /* Original size */
+  }
+
+  .card__profession {
+    font-size: 0.8rem; /* Original size */
+  }
+}
