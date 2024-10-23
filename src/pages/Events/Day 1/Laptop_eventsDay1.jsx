@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
-import img from '../../../../public/assets/Events/img/img1.jpg'
 import './Laptop_eventsDay1.css';
 
 const Laptop_eventsDay1 = () => {
@@ -239,17 +238,14 @@ const Laptop_eventsDay1 = () => {
   return (
     <div id="main">
       <div id="back">
-        <img src="/assets/Events/img/coding.jpg" alt="" />
-        <img src="/assets/Events/img/exhibition.jpg" alt="" />
-        <img src="/assets/Events/img/gameroom.jpg" alt="" />
-        <img src="/assets/Events/img/hackathon.jpg" alt="" />
-        <img src="/assets/Events/img/bgmi_valo.jpg" alt="" />
-        <img src="/assets/Events/img/quiz.jpg" alt="" />
-        <img src="/assets/Events/img/robotics.jpg" alt="" />
-
+        <img src="/assets/laptop_photos/quiz.jpg" alt="" />
+        <img src="/assets/laptop_photos/cyberhunt.png" alt="" />
+        <img src="/assets/laptop_photos/debuggers.png" alt="" />
+        <img src="/assets/laptop_photos/quiz.jpg" alt="" />
+        <img src="/assets/laptop_photos/bgmi_valo.jpg " alt="" />
       </div>
       <div id="top">
-        <div id="workingarea">
+        <div id="workingarea"> 
           <div id="nav">
             <div id="nleft">
               <img src="logo.png" alt="logo" />
@@ -264,26 +260,20 @@ const Laptop_eventsDay1 = () => {
           <div id="hero">
             <div id="heroleft">
               <div className="elem">
-                <h1>CodeThrill 7.0</h1>
-                <h1>Tech Exhibition</h1>
-                <h1>Game Room</h1>
-                <h1>Hackathon</h1>
-                <h1>E-Sports</h1>
-                <h1>Tech Quiz</h1>
-                <h1>Robotics</h1>
+                <h1>Tech Quiz Round 1</h1>
+                <h1>Cyber Hunt</h1>
+                <h1>Debuggers Round 1</h1>
+                <h1>Tech Quiz Round 2</h1>
+                <h1>E-Sports Round 1</h1>
               </div>
               <div className="elem">
-                <h1>time</h1>
-                <h1>time</h1>
-                <h1>time</h1>
-                <h1>time</h1>
-                <h1>time</h1>
-                <h1>time</h1>
-                <h1>time</h1>
+                <h1>10 am</h1>
+                <h1>11 am</h1>
+                <h1>2 pm</h1>
+                <h1>3 pm</h1>
+                <h1>5 pm</h1>
               </div>
               <div className="elem">
-                <h1>venue</h1>
-                <h1>venue</h1>
                 <h1>venue</h1>
                 <h1>venue</h1>
                 <h1>venue</h1>
@@ -292,8 +282,6 @@ const Laptop_eventsDay1 = () => {
               </div>
 
               <button className='register'>
-                <a href="#" className='registerLink'>Register Now</a>
-                <a href="#" className='registerLink'>Register Now</a>
                 <a href="#" className='registerLink'>Register Now</a>
                 <a href="#" className='registerLink'>Register Now</a>
                 <a href="#" className='registerLink'>Register Now</a>
@@ -302,66 +290,24 @@ const Laptop_eventsDay1 = () => {
               </button>
             </div>
             <div id="heroright">
-              <div className="elem2">
-                <p className='textR1'>CodeThrill 7.0</p>
-                <p className='textR1'>Tech Exhibition</p>
-                <p className='textR1'>Game Room</p>
-                <p className='textR1'>Hackathon</p>
-                <p className='textR1'>E-Sports</p>
-                <p className='textR1'>Tech Quiz</p>
-                <p className='textR1'>Robotics</p>
-              </div>
-
-              <div className="imgElem">
-                <div id="imagediv">
-                  <img src={img} alt="" />
-                </div>
-                <div id="imagediv">
-                  <img src={img} alt="" />
-                </div>
-                <div id="imagediv">
-                  <img src={img} alt="" />
-                </div>
-                <div id="imagediv">
-                  <img src={img} alt="" />
-                </div>
-                <div id="imagediv">
-                  <img src={img} alt="" />
-                </div>
-                <div id="imagediv">
-                  <img src={img} alt="" />
-                </div>
-                <div id="imagediv">
-                  <img src={img} alt="" />
-                </div>
-              </div>
+             
 
               <div className="elem3">
                 <p className='textR2'>
-                Gear up for a coding showdown! 
-                Test your skills, solve complex problems, 
-                and race against the clock in CodeThrill 7.0. 
+                Think you know tech? 
+                Join our Tech Quiz for a chance to showcase 
+                your knowledge and compete for the top spot.
                 </p>
                 <p className='textR2'>
-                Explore the future at our Tech Exhibition!
-                Discover innovations, technology, 
-                and visionary projects all under one roof.
+                Join us at a coding competition focused on debugging.
+                You will have to solve errors, optimization issues
+                or flaws in code snippets from problems.
                 </p>
                 <p className='textR2'>
-                Time to unwind and have some fun!
-                Swing by our Game Room, dive into awesome games,
-                and hang out with friends. 
-                </p>
-                <p className='textR2'>
-                Get ready to hack, code, and create!
-                Join our Hackathon for a day of coding,
-                excitement and teamwork.
-                </p>
-                <p className='textR2'>
-                Gear up for the ultimate esports showdown!
-                Whether you’re battling it out in Valorant 
-                or dropping into BGMI, the competition 
-                is fierce and the fun is unbeatable.
+                Get ready for an exciting journey into the tech world! 
+                Gather your crew and prepare to tackle codes, 
+                digital challenges, and puzzles that 
+                blend the virtual with the physical.
                 </p>
                 <p className='textR2'>
                 Think you know tech? 
@@ -369,38 +315,14 @@ const Laptop_eventsDay1 = () => {
                 your knowledge and compete for the top spot.
                 </p>
                 <p className='textR2'>
-                Get ready for the ultimate robotics face-off!
-                Watch as teams bring their robots to life 
-                and compete in thrilling challenges.
+                Gear up for the ultimate esports showdown!
+                Whether you’re battling it out in Valorant 
+                or dropping into BGMI, the competition 
+                is fierce and the fun is unbeatable.
                 </p>
               </div>
 
-              <div className="elem4">
-                <p className='textR3'>
-                It's time to code, compete, and conquer!
-                </p>
-                <p className='textR3'>
-                Join us and be inspired by tomorrow’s tech today!
-                </p>
-                <p className='textR3'>
-                Let the good times roll!
-                </p>
-                <p className='textR3'>
-                Team up, solve cool problems, and make some awesome stuff.
-                </p>
-                <p className='textR3'>
-                Ready, set, game on!
-                </p>
-                <p className='textR3'>
-                It’s fun, it’s challenging, and it’s your chance to shine.
-                </p>
-                <p className='textR3'>
-                Who will rise to the top?
-                </p>
-              </div>
               <button className='register'>
-                <a href="/events/preEvents" className='registerLink'>Timeline</a>
-                <a href="/events/preEvents" className='registerLink'>Timeline</a>
                 <a href="/events/preEvents" className='registerLink'>Timeline</a>
                 <a href="/events/preEvents" className='registerLink'>Timeline</a>
                 <a href="/events/preEvents" className='registerLink'>Timeline</a>
@@ -416,3 +338,4 @@ const Laptop_eventsDay1 = () => {
 };
 
 export default Laptop_eventsDay1;
+  

@@ -3,9 +3,9 @@ import Card from './Card'; // Ensure this path matches where your Card component
 
 const cardData = [
     {
-        image: 'https://i.pinimg.com/originals/07/33/ba/0733ba760b29378474dea0fdbcb97107.png',
-        name: 'Emily Jules',
-        profession: 'UI/UX Designer',
+        image: '/assets/TeamPage/team_heads/pratap.JPG',
+        name: 'Aditya Pratap',
+        profession: 'Team Head',
         socialLinks: [
             { url: 'https://www.facebook.com/', icon: 'ri-facebook-line' },
             { url: 'https://www.instagram.com/', icon: 'ri-instagram-line' },
@@ -13,9 +13,9 @@ const cardData = [
         ],
     },
     {
-        image: 'https://i.pinimg.com/originals/07/33/ba/0733ba760b29378474dea0fdbcb97107.png',
-        name: 'Hamley Doe',
-        profession: 'Front-End Developer',
+        image: '/assets/TeamPage/team_heads/prince.jpeg',
+        name: 'Prince Kumar',
+        profession: 'Team Head',
         socialLinks: [
             { url: 'https://www.facebook.com/', icon: 'ri-facebook-line' },
             { url: 'https://www.instagram.com/', icon: 'ri-instagram-line' },
@@ -23,9 +23,9 @@ const cardData = [
         ],
     },
     {
-        image: 'https://i.pinimg.com/originals/07/33/ba/0733ba760b29378474dea0fdbcb97107.png',
-        name: 'John Jules',
-        profession: 'UI/UX Designer',
+        image: '/assets/TeamPage/team_non_heads/ipshita.JPG',
+        name: 'Ipshita Ranjan',
+        profession: 'Core Team Member',
         socialLinks: [
             { url: 'https://www.facebook.com/', icon: 'ri-facebook-line' },
             { url: 'https://www.instagram.com/', icon: 'ri-instagram-line' },
@@ -33,9 +33,9 @@ const cardData = [
         ],
     },
     {
-        image: 'https://i.pinimg.com/originals/07/33/ba/0733ba760b29378474dea0fdbcb97107.png',
-        name: 'John Doe',
-        profession: 'Front-End Developer',
+        image: '/assets/TeamPage/team_non_heads/pranay.JPG',
+        name: 'Pranay Siwach',
+        profession: 'Core Team Member',
         socialLinks: [
             { url: 'https://www.facebook.com/', icon: 'ri-facebook-line' },
             { url: 'https://www.instagram.com/', icon: 'ri-instagram-line' },
@@ -43,19 +43,19 @@ const cardData = [
         ],
     },
     {
-        image: 'https://i.pinimg.com/originals/07/33/ba/0733ba760b29378474dea0fdbcb97107.png',
-        name: 'Emily Jules',
-        profession: 'UI/UX Designer',
+        image: '/assets/TeamPage/team_non_heads/adarsh.JPG',
+        name: 'Talabattula Adarsh',
+        profession: 'Core Team Member',
         socialLinks: [
             { url: 'https://www.facebook.com/', icon: 'ri-facebook-line' },
-            { url: 'https://www.instagram.com/', icon: 'ri-instagram-line' },
+            { url: 'https://www.instagram.com/adarsh_t_1011?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==', icon: 'ri-instagram-line' },
             { url: 'https://twitter.com/', icon: 'ri-twitter-line' },
         ],
     },
     {
-        image: 'https://i.pinimg.com/originals/07/33/ba/0733ba760b29378474dea0fdbcb97107.png',
-        name: 'John Doe',
-        profession: 'Front-End Developer',
+        image: '/assets/TeamPage/team_non_heads/vardhan.JPG',
+        name: 'Mallena Vardhan',
+        profession: 'Core Team Member',
         socialLinks: [
             { url: 'https://www.facebook.com/', icon: 'ri-facebook-line' },
             { url: 'https://www.instagram.com/', icon: 'ri-instagram-line' },
